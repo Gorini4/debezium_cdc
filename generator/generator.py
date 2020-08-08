@@ -10,6 +10,10 @@ def connect_to_postgres():
         options=f'-c search_path=inventory')
     return conn
 
+import time
+
+time.sleep(20) # wait for postgres
+
 connection = connect_to_postgres()
 cursor = connection.cursor()
 connection.commit()
@@ -54,11 +58,7 @@ def generate_operation():
     else:
         insert_new_customer(connection, cursor)
 
-import time
-
 ops_counter = 0
-
-time.sleep(20) # wait for postgres
 
 while True:
     generate_operation()
