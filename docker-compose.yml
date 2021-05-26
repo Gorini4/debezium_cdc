@@ -44,6 +44,8 @@ services:
     build: ./generator
     links:
       - postgres
+    depends_on:
+      - postgres
 
   streamsets:
     build:

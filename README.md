@@ -20,7 +20,7 @@
 * [Пример StreamSets + Kafka](https://youtu.be/SiZrkyEzpJc?t=491)
 * Адрес Kafka - `kafka:9092`
 * Адрес zookeeper - `zookeeper:2181`
-* Адрес Hadoop - `hadoop:9000`
+* Адрес Hadoop - `hdfs://namenode:9000`
 
 ## Требования
 
